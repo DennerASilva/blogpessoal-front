@@ -10,11 +10,11 @@ import './App.css'
 function App() {
   return (
     <>
-        <BrowserRouter>
+         <BrowserRouter> {/*Habilita o processo de rotas - Satélite */}
           <Navbar />
           <div className="min-h-[80vh]">
-            <Routes>
-                <Route path="/" element={<Login />} />
+            <Routes> {/*Observa a URL - pega a rota. Ex: cadastro - Aparelho GPS */}
+                <Route path="/" element={<Login />} /> {/* Destino final */} 
                 <Route path="/home" element={<Home />} /> 
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/login" element={<Login />} />
